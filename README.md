@@ -1,14 +1,13 @@
 <h1 align="center">Calculadora</h1>
 <p align="center">Calculadora com Local Storage</p>
 <div align="center">
-[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
+<img src="https://img.shields.io/static/v1?label=Blog&message=Rocketseat&color=7159c1&style=for-the-badge"/>
 </div>
 
 <p align="center">
  <a href="#objetivo" style="text-decoration: none">Objetivo</a> •
  <a href="#roadmap">Imagens</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
- <a href="#licenc-a">Licença</a> • 
  <a href="#autor">Autor</a>
 </p>
 
@@ -22,12 +21,11 @@
 <br>
 
 <h2 align="center">Tecnologias</h2>
-- [x] HTML
-- [x] CSS
-- [x] JavaScript
-<br>
-
-<h2 align="center">Licença</h2>
+<ul align="center">
+ <li>HTML</li>
+ <li>CSS</li>
+ <li>JavaScript</li>
+</ul>
 <br>
 
 <h2 align="center">Autor</h2>
