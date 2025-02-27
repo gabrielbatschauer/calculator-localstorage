@@ -7,27 +7,24 @@
 
 <p align="center">
  <a href="#objetivo" style="text-decoration: none">Objetivo</a> •
- <a href="#roadmap">Imagens</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#autor">Autor</a>
+ <a href="#imagens">Imagens</a> • 
+ <a href="#tecnologias">Tecnologias</a>
 </p>
 
 
-<br>
-<h2>Objetivo</h2>
+### **Objetivos**
 <p>Criação com front-end baseado na calculadora do windows 11, mas com histórico das contas armazenados em local storage.</p>
-<br>
+<br/>
 
-<p font-weight="bold">Imagens</p>
-<br>
+### **Imagens**
+![Calculadora](/Calculadora/img/exemplo1.png)
+![Calculadora](/Calculadora/img/exemplo2.png)
+<br/>
 
-<h2>Tecnologias</h2>
+### **Tecnologias**
 <ul>
  <li>HTML</li>
  <li>CSS</li>
  <li>JavaScript</li>
 </ul>
-<br>
-
-<h2 align="center">Autor</h2>
 
