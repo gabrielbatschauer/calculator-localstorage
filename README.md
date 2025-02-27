@@ -1,7 +1,8 @@
 <h1 align="center">Calculadora</h1>
 <p align="center">Calculadora com Local Storage</p>
+<img src="https://img.shields.io/static/v1?label=license&message=free&color=green&style=for-the-badge&logo=ghost"/>
 <p align="center">
- <a href="#objetivo" style="text-decoration: none; color=inherit">Objetivo</a> •
+ <a href="#objetivo" style="text-decoration: none">Objetivo</a> •
  <a href="#roadmap">Imagens</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#licenc-a">Licença</a> • 
