@@ -1,8 +1,9 @@
 <h1 align="center">Calculadora</h1>
 <p align="center">Calculadora com Local Storage</p>
 <div align="center">
-<img src="https://img.shields.io/static/v1?label=Blog&message=Rocketseat&color=7159c1&style=for-the-badge"/>
+<img src="https://img.shields.io/static/v1?label=license&message=free&color=green&style=for-the-badge"/>
 </div>
+<br>
 
 <p align="center">
  <a href="#objetivo" style="text-decoration: none">Objetivo</a> •
@@ -13,15 +14,15 @@
 
 
 <br>
-<h2 align="center">Objetivo</h2>
-<p id="objetivo">Criação com front-end baseado na calculadora do windows 11, mas com histórico das contas armazenados em local storage.</p>
+<h2>Objetivo</h2>
+<p>Criação com front-end baseado na calculadora do windows 11, mas com histórico das contas armazenados em local storage.</p>
 <br>
 
-<h2 align="center">Imagens</h2>
+<p font-weight="bold">Imagens</p>
 <br>
 
-<h2 align="center">Tecnologias</h2>
-<ul align="center">
+<h2>Tecnologias</h2>
+<ul>
  <li>HTML</li>
  <li>CSS</li>
  <li>JavaScript</li>
