@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.geral {
+  display: block;
+  background-color: #202020;
+  border: 0.5px solid rgb(158, 158, 158);
+  width: 300px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.headerCalculadora {
+  color: white;
+  display: flex;
+  padding: 10px 12px;
+}
+.headerCalculadora img {
+  width: 7%;
+  margin-right: 10px;
+
+}
+.calculadora {
+  display: flex;
+  background-color: #202020;
+  box-shadow: 0px 4px 4px #00000040;
+  overflow: hidden;
+
+  color: #fff;
+}
+
+.calculadora-calculos {
+  width: 100%;
+}
+
+.openHistorico {
+  border: none;
+  background-color: #202020;
+  width: 100%;
+
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.openHistorico img {
+  width: 10%;
+  height: auto;
+  text-align: right;
+  padding: 5px;
+
+}
+
+.openHistorico img:hover {
+  background-color: #3d3d3d;
+  border-radius: 5px;
+}
+
+.resultado {
+  height: 75px;
+  padding: 0px 20px 20px 20px;
+  text-align: right;
+  font-size: 2.5rem;
+}
+.contaAtual {
+  padding-top: 15px;
+  margin-right: 5px;
+  text-align: right;
+  color: #919191;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+}
+
+.buttons button {
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.button-dark {
+  background-color: #323232;
+}
+
+.button-dark:hover {
+  background-color: #3B3B3B;
+}
+
+.button-light {
+  background-color: #3B3B3B;
+}
+
+.button-light:hover {
+  background-color: #323232;
+}
+
+.button-equal {
+  background-color: #76B9ED;
+  color: black !important;
+}
+
+.calculadora-historico {
+  padding: 0 10px 0 40px;
+  min-width: 250px;
+  opacity: 0;
+  background-color: #202020;
+  z-index: 3;
+  bottom: 0;
+  right: auto;
+  display: none;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  max-height: 60%;
+  overflow-y: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  right: auto;
+}
+.calculadora-historico::-webkit-scrollbar {
+  width: 10px;
+}
+.calculadora-historico::-webkit-scrollbar-track {
+  background: rgb(99, 93, 83);        /* color of the tracking area */
+}
+
+.calculadora-historico::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #d3d3d3;  /* creates padding around scroll thumb */
+}
+
+.header-historico p {
+  margin: 0 0 6px 0;
+}
+
+.header-historico {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.historico {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 90%;
+  text-indent: 20px;
+  list-style-type: none !important;
+}
+
+.historico li {
+  padding: 2px 0px;
+  text-align: right;
+  margin-right: -10px;
+}
+
+.linha {
+  width: 30px;
+  height: 4px;
+  background-color: #00BFFF;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.lixeiraDiv {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.lixeira {
+  width: 8%;
+  cursor: pointer;
+}
+.modal-container {
+  width: 100vw;
+  position: fixed;
+  top: 30px;
+  display: none;
+  z-index: 999;
+  justify-content: center;
+}
+
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: lightgray;
+
+  border-radius: 10px;
+  width: 50%;
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal .4s;
+}
+
+.opacity {
+  opacity: 1;
+  animation: history .4s;
+  display: block !important;
+}
+
+.blur {
+  filter: blur(1px);
+}
+
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes history {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+span {
+  margin: 10px auto;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btns button {
+  font-size: medium;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btnOK {
+  background-color: blue !important;
+}
+
+.btnClose {
+  background-color: brown !important;
+}
+
+@media (max-width: 500px) {
+  .modal {
+    padding: 10px;
+    width: 80%;
+  }
+
+  span,
+  .btns button {
+    font-size: smaller;
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body id="body">
+  <div class="modal-container">
+    <div class="modal">
+      <h2>Info</h2>
+      <br>
+      <hr />
+      <br>
+      <span>
+        Botão em desenvolvimento
+      </span>
+      <br>
+      <hr />
+      <br>
+      <div class="btns">
+        <button class="btnOK" onclick="closeModal()">OK</button>
+        <button class="btnClose" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <d  iv class="geral">
+    <div class="headerCalculadora">
+      <img src="img/Windows_Calculator_icon.png" alt="">
+      <p>Calculadora</p>
+    </div>
+    <div class="calculadora" id="blurDiv">
+      
+      <div class="calculadora-calculos">
+        <button class="openHistorico" id="histBtn"><img src="img/history_icon_149927.png" alt="Historico"></button>
+        <div class="contaAtual">Sem histórico</div>
+        <div class="resultado">0</div>
+        <div class="buttons">
+          <button class="button-dark" onclick="porcentagem()">%</button>
+          <button class="button-dark" onclick="limpar()">CE</button>
+          <button class="button-dark" onclick="limpar()">C</button>
+          <button class="button-dark" onclick="apagarUltimo()">⌫</button>
+  
+          <button class="button-dark" onclick="fracao()">⅟x</button>
+          <button class="button-dark" onclick="exponencial()">x²</button>
+          <button class="button-dark" onclick="raiz()">√</button>
+          <button class="button-dark" onclick="calcularOperador('/')">÷</button>
+  
+          <button class="button-light" onclick="adicionar(7)">7</button>
+          <button class="button-light" onclick="adicionar(8)">8</button>
+          <button class="button-light" onclick="adicionar(9)">9</button>
+          <button class="button-dark" onclick="calcularOperador('*')">X</button>
+  
+          <button class="button-light" onclick="adicionar(4)">4</button>
+          <button class="button-light" onclick="adicionar(5)">5</button>
+          <button class="button-light" onclick="adicionar(6)">6</button>
+          <button class="button-dark" onclick="calcularOperador('-')">-</button>
+  
+          <button class="button-light" onclick="adicionar(1)">1</button>
+          <button class="button-light" onclick="adicionar(2)">2</button>
+          <button class="button-light" onclick="adicionar(3)">3</button>
+          <button class="button-dark" onclick="calcularOperador('+')">+</button>
+  
+          <button class="button-light" onclick="maismenos()">±</button>
+          <button class="button-light" onclick="adicionar(0)">0</button>
+          <button class="button-light" onclick="openModal()">,</button>
+          <button class="button-equal" onclick="calcular()">=</button>
+        </div>
+      </div>
+  
+      
+    </div>
+
+
+    <div class="calculadora-historico" id="overlay">
+      <div class="header-historico">
+        <p>Histórico</p>
+        <div class="linha"></div>
+      </div>
+
+      <ul id="historico" class="historico">
+        <li></li>
+      </ul>
+      <span  class="lixeiraDiv" ><img src="img/icon-lixeira.svg" class="lixeira" id="limparHistorico" alt=""></span>
+    </div>
+  </div>
+  
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
