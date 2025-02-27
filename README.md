@@ -1,7 +1,7 @@
 <h1 align="center">Calculadora</h1>
 <p align="center">Calculadora com Local Storage</p>
 <div align="center">
-<img src="https://img.shields.io/static/v1?label=license&message=free&color=green&style=for-the-badge"/>
+<img src="https://img.shields.io/badge/license-free-green"/>
 </div>
 <br>
 
